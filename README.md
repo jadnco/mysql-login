@@ -15,3 +15,9 @@ Alternatively, you can check whether someone is an admin by calling `is_admin()`
     } else {
         echo "Not Logged In";
     }
+
+To make only a certain element secure, wrap with a conditional
+
+    <?php if (logged_in()) : ?>
+        <div>You are logged in</div>
+    <?php endif; ?>
